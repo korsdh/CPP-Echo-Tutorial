@@ -34,7 +34,7 @@ int main() {
 	serverAddress.sin_port = htons(serverPort); // 포트
 
 	if (connect(clientSocket, (SOCKADDR*)&serverAddress, sizeof(serverAddress)) == SOCKET_ERROR)
-		ShowErrorMessage("connect()");
+		ShowErrorMessage("connect ( )");
 	cout << "[현재 상태] connect()\n";
 
 	while (1) {
